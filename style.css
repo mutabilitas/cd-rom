@@ -1,0 +1,105 @@
+body {
+    margin-left: 250px; /* Same as the width of the sidebar */
+    width: 450px;
+    padding: 0px 10px;
+    padding-top: 3em;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    line-height: 1.25;
+}
+
+/* Parent container */
+.layout-wrapper {
+  display: flex;
+  align-items: flex-start; /* Keeps sidebar aligned to the top */
+}
+
+.main {
+    color: #3f2112;
+	font-style: normal;
+	line-height: 1.25;
+	letter-spacing: 0;
+	display: block;
+    flex-grow: 1; /* Takes up the remaining screen width */
+    box-sizing: border-box;
+}
+
+p {
+    display: inline;
+}
+
+h1, h2, h3 {
+  display: inline;
+}
+
+a {
+    color: #94A6AA;
+}
+
+a.hover {
+  cursor: alias;
+}
+
+li {
+	padding-bottom: 5px;
+}
+
+ol {
+	margin: 0;
+	padding: 0 0 0 2.5em;
+}
+
+ul {
+	padding: 0 0 0 2.0em;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 1.2em 0 0 20px;
+  color: #3f2112;
+  display: inline;
+  box-sizing: border-box;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: underline;
+  font-size: 0.75rem;
+  color: #94A6AA;
+  display: block;
+}
+
+.name {
+    font-family: "Pinyon Script", serif;
+    line-height: 0.795;
+    font-size: larger;
+    padding-top: 1em;
+}
+
+.name a {
+    font-family: "Pinyon Script", serif;
+    line-height: 0.795;
+    font-size: larger;
+    text-decoration: none;
+    color: #3f2112;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0 0 0 2em;
+}
+
+.annotation-text {
+	display: none;
+}
+
+.annotation:hover .annotation-text {
+  display: inline;
+}
